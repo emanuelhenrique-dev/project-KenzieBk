@@ -1,0 +1,250 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F5F0;
+}
+
+.wrapper {
+  width: min(133rem, 100%);
+  margin-inline: auto;
+}
+
+/*         HEADER          */
+.cabecalho {
+  border-bottom: 1px solid #D62200;
+}
+
+.cabecalho .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+  height: 11.8rem;
+}
+
+.cabecalho #logo {
+  width: 20rem;
+  height: 5.3rem;
+}
+
+/*                                  MAIN                                       */
+
+
+main .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mudarIdioma {
+  display: flex;
+  flex-direction: column;
+}
+
+.mudarIdioma > img {
+  width: 11.8rem;
+  height: 12.6rem;
+  margin-inline: auto;
+}
+
+.mudarIdioma .bandeiras {
+  display: flex;
+  gap: 3.9rem;
+}
+
+.mudarIdioma .bandeiras img {
+  width: 4.52rem;
+  height: 4.52rem;
+  cursor: pointer;
+}
+
+.mudarIdioma .bandeiras img + img {
+  filter: opacity(40%);
+}
+
+.mudarIdioma .bandeiras img:hover {
+  filter: opacity(100%);
+}
+
+
+
+
+/*         painel numerico          */
+
+.painel-verificacao {
+  width: 53.2rem;
+  height: 64.4rem;
+  border: 1px solid #502314;
+  border-radius: 2rem;
+  margin-bottom: 4.7rem;
+  color:#502314;
+}
+
+.painel-verificacao header {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.painel-verificacao header img {
+  width: 4.46rem;
+  height: 3.83rem;
+  margin-bottom: 2rem;
+}
+
+.painel-verificacao header h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 3.54rem;
+  margin-bottom: .5rem;
+}
+
+.painel-verificacao header h2 span {
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.painel-verificacao header p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 1.63rem;
+}
+
+.painel-verificacao .inputs {
+  margin-top: 1.8rem;
+  text-align: center;
+}
+
+.painel-verificacao .inputs #cpf_space {
+  resize: none;
+  width: 29.18rem;
+  height: 6.7rem;
+  border-radius: 1rem;
+  border: 1px solid #502314;
+  font-size: 2.4rem;
+  text-align: center;
+  text-align-last: center;
+}
+
+/*         botoes numericos          */
+
+.painel-verificacao .inputs .numbers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 17rem;
+  gap: .85rem 1.8rem;
+  margin-inline: auto;
+  margin-top: 1.7rem;
+} 
+
+.painel-verificacao .inputs .numbers div {
+  background-color: #FFFFFF;
+  width: 4.46rem;
+  height: 4.46rem;
+  border: 1px solid #502314;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.27rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.painel-verificacao .inputs .numbers div:hover {
+  border-radius: 5rem;
+}
+
+.painel-verificacao .inputs .button-confirm {
+  margin-top: 1.8rem;
+}
+
+.painel-verificacao .inputs .button-confirm button {
+  width: 30rem;
+  height: 5.1rem;
+  border-radius: 1rem;
+  background-color: #DB3B1D;
+  border: none;
+
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.27rem;
+  cursor: pointer;
+}
+
+.painel-verificacao .inputs .button-confirm button ~ button{
+  background: #F5EBDC;
+  border: 2px solid #DB3B1D;
+  
+  color:#DB3B1D;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 2.4rem;
+  margin-top: 1.9rem;
+}
+
+.painel-verificacao .inputs .button-confirm button:hover {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+/*                                     FOOTER                    */
+
+.credito-information {
+  background-color: #ffffff;
+  height: 15.1rem;
+}
+
+.credito-information .wrapper {
+  padding-block: 2.8rem;
+}
+
+.credito-information p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: #502314;
+  line-height: 2.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.credito-information img {
+  width: 70rem;
+  height: 5.5rem;
+  display: block;
+  margin-inline: auto;
+}
