@@ -1,0 +1,94 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F5EBDC;
+  background-image: linear-gradient(#F5EBDC 31.05%, rgba(245, 235, 220, 0) 68.05% , #FFFFFF 100%);
+
+}
+
+.wrapper {
+  width: min(133rem, 100%);
+  margin-inline: auto;
+}
+
+/*         HEADER          */
+.cabecalho {
+  border-bottom: 1px solid #D62200;
+}
+
+.cabecalho .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+  height: 11.8rem;
+}
+
+.cabecalho #logo {
+  width: 20rem;
+  height: 5.3rem;
+}
+
+/*         MAIN          */
+
+.banner-entrada .wrapper {
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4.1rem;
+  
+}
+
+.banner-entrada img {
+  Width: 54.6rem;
+  Height: 58.6rem;
+}
+
+.banner-entrada button {
+  width: 33.4rem;
+  height: 9.6rem;
+  border-radius: 1.5rem;
+  border: none;
+  background: #DB3B1D;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 4.8rem;
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+}
+
+/*         FOOTER          */
+
+.credito-information p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: #502314;
+  line-height: 2.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.credito-information img {
+  width: 70rem;
+  height: 5.5rem;
+  display: block;
+  margin-inline: auto;
+  margin-bottom: 4.6rem;
+}
