@@ -1,0 +1,274 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  background-color:#F5F3F0;
+  overflow: hidden visible;
+}
+
+.wrapper {
+  width: min(133rem, 100%);
+  margin-inline: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/*         HEADER          */
+.cabecalho {
+  border-bottom: 1px solid #D62200;
+}
+
+.cabecalho .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+  height: 11.8rem;
+}
+
+.cabecalho #logo {
+  width: 20rem;
+  height: 5.3rem;
+}
+
+.banner,
+.banner img {
+  width: 100%;
+  height: 17.4rem;
+}
+
+/*         MAIN          */
+.secaoProdutos .wrapper{
+  padding-block: 6rem;
+}
+
+.secaoProdutos .produtosLista {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0 4rem;
+  flex-wrap: wrap;
+}
+
+.secaoProdutos .produtosLista li {
+  background-color: #FFFFFF;
+  width: 23.3rem;
+  text-align: center;
+  padding: 2.2rem 2.8rem;
+  margin-top: 1.5rem;
+  border: 2px solid #F5EBDC;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.8rem;  
+}
+
+.secaoProdutos .produtosLista li:hover {
+  border: 2px solid #FF8627;
+}
+
+
+/*Cards com os produtos*/
+.secaoProdutos .produtosLista li img {
+  width: 15rem;
+  height: 12rem;
+}
+
+.secaoProdutos .produtosLista li h3 {
+  width: 15rem;
+  height: 6rem;
+  color: #502314;
+  font-size: 2rem;
+  Line-height: 2.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.secaoProdutos .produtosLista li p {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.secaoProdutos .produtosLista li button {
+  background: #F5F3F0;
+  border:none;
+  border-radius: .8rem;
+  width: 17.7rem;
+  height: 4.1rem;
+  color: #2D2D2D;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+}
+
+.secaoProdutos .produtosLista li button:hover {
+  background: #FF8627;
+  color: #FFFFFF ;
+}
+
+
+
+/*         FOOTER          */
+.carrinho .infoResumo{
+    background: #502314;
+    border-radius: 3.2rem 3.2rem 0 0;
+    padding-block: 2.3rem;
+    color: #F7F5F0;
+}
+
+.carrinho .infoResumo .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrinho .infoUsuario h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.2rem;
+  margin-bottom: 1.8rem;
+  line-height: 4.4rem;
+}
+
+.carrinho .infoUsuario p {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+
+.carrinho .infoResumo .infoPreco {
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  padding-block: 2.6rem;
+}
+
+.carrinho .resumoPedido{
+  background-color: white;
+  padding-block: 4.8rem;
+}
+
+.carrinho .resumoPedido .wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.carrinho .resumoPedido .cardProduto {
+  background: #F5F3F0;
+  border-radius: 1.5rem;
+  width: 106rem;
+  height: 13rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5rem;
+}
+
+.carrinho .resumoPedido .cardProduto div{
+  display: flex;
+  align-items: center;
+}
+
+.carrinho .resumoPedido .cardProduto .infoProduto img{
+  width: 15rem;
+}
+
+.carrinho .resumoPedido .cardProduto .infoProduto p{
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #502314;
+  margin-left: 3rem;
+}
+
+.carrinho .resumoPedido .cardProduto .infoPreco p{
+  font-style: italic;
+  font-weight: 200;
+  font-size: 2.4rem;
+  color: #2D2D2D;
+}
+.carrinho .resumoPedido .cardProduto .infoPreco img{
+  width: 1.4rem;
+}
+
+/*     FOOTER DELETE BUTTON   */
+.carrinho .resumoPedido .cardProduto .infoPreco button{
+  background: #E6E6E6;
+  border-radius: .4rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 5.1rem;
+  margin-left: 4.3rem;
+  cursor: pointer;
+}
+
+.carrinho .resumoPedido .cardProduto .infoPreco button:hover {
+  background: #d1d0d0;
+}
+
+/*         FOOTER BUTTON         */
+.btnFinalizaPedido {
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+  margin-left: 4.3rem;
+}
+
+.btnFinalizaPedido button{
+  width: 22rem;
+  height: 5.1rem;
+  background: #DB3B1D;
+  border: 4px solid #DB3B1D;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.2rem;
+  color: #FFFFFF;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.btnFinalizaPedido button ~ button{
+  background: #fff;
+  border: 4px solid #DB3B1D;
+  color:#DB3B1D;
+}
+
+.btnFinalizaPedido button:hover {
+  font-size: 2.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
