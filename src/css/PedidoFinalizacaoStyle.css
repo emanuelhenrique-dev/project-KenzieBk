@@ -169,7 +169,6 @@ ul {
 
 .carrinho .resumoPedido .wrapper {
   display: flex;
-  align-items: center;
 }
 
 .carrinho .resumoPedido .cardProduto {
@@ -181,6 +180,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding-inline: 5rem;
+  margin-bottom: 1.5rem;
 }
 
 .carrinho .resumoPedido .cardProduto div{
