@@ -1,0 +1,113 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F5F0;
+  font-family: 'Nunito', sans-serif;
+  min-height: 105rem;
+}
+
+.wrapper {
+  width: min(133rem, 100%);
+  margin: 0 auto;
+}
+
+/*         HEADER          */
+.cabecalho {
+  border-bottom: 1px solid #D62200;
+}
+
+.cabecalho .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+  height: 11.8rem;
+}
+
+.cabecalho #logo {
+  width: 20rem;
+  height: 5.3rem;
+}
+
+/*                                  MAIN                                       */
+
+/* PARTE PRINCIPAL */
+/* TÍTULO */
+main .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.titulo > img {
+  width: 11.8rem;
+  margin-bottom: 2.7rem;
+}
+
+.titulo {
+  color: #502314;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.titulo h1 {
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+.titulo  p {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 3.8rem;
+  line-height: 5rem;
+}
+
+/* SECTION OPÇÕES */
+.opcaoRetirada {
+  display: flex;
+  gap: 4.5rem;
+  margin-block: 2.5rem;
+}
+
+.opcaoRetirada > div {
+  border: 4px solid #DB3B1D;
+  border-radius: 1.5rem;
+  width: 30.8rem;
+  height: 43.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.7rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.opcaoRetiradas > div > img {
+  width: 100px;
+}
+
+.opcaoRetirada > div > p {
+  color: #DB3B1D;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 3rem;
+  width: 15rem;
+  text-align: center;
+  line-height: 4.1rem;
+}
