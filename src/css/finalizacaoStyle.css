@@ -1,0 +1,189 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color:#F5F3F0;
+  min-height: 108rem;
+}
+
+.wrapper {
+  width: min(133rem, 100%);
+  margin-inline: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/*         HEADER          */
+.cabecalho {
+  border-bottom: 1px solid #D62200;
+}
+
+.cabecalho .wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding-block: 3rem;
+  height: 11.8rem;
+}
+
+.cabecalho #logo {
+  width: 20rem;
+  height: 5.3rem;
+}
+
+.banner,
+.banner img {
+  width: 100%;
+  height: 17.4rem;
+}
+
+/*         MAIN          */
+
+main .wrapper {
+  width: 111.4rem;
+}
+
+.pedidoResumo {
+  margin-top: 4.8rem;
+}
+
+.pedidoResumo h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  font-weight: 400;
+  color: #DB3B1D;
+  margin-bottom: 2.7rem;
+}
+
+.pedidoResumo .pedido {
+  display: flex;
+  align-items: center;
+}
+
+.pedidoResumo .pedido img {
+  width: 14rem;
+  margin-right: 3.4rem;
+  align-self: flex-start;
+}
+
+.pedidoResumo .pedido .information{
+  margin-top: .6rem;
+}
+
+.pedidoResumo .pedido .information div {
+  width: 94rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 3.8rem;
+}
+
+.pedidoResumo .pedido .information .lista {
+  background-color: white;
+  border-radius: 1.5rem;
+  height: 9.4rem;
+}
+
+.pedidoResumo .pedido .information .lista p {
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 3.3rem;
+  color: #502314;
+  
+}
+
+.pedidoResumo .pedido .information .lista .quantidade {
+  border: 1px solid #502314;
+  border-radius: 1.5rem;
+  width: 14rem;
+  height: 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.pedidoResumo .pedido .information .lista .quantidade span {
+  border: none;
+  background-color: white;
+  color: #D62300;
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+
+.pedidoResumo .pedido .information .precoTotal {
+  margin-top: 1.5rem;
+}
+
+.pedidoResumo .pedido .information .precoTotal p {
+  font-size: 3.4rem;
+  line-height: 4.6rem;
+  color: #502314;
+}
+
+.mensagemFinalizacao {
+  margin-top: 10.6rem;
+}
+
+.mensagemFinalizacao .id-pedido {
+  background-color: #ff8627;
+  height: 27rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mensagemFinalizacao .id-pedido span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-top: 1.8rem;
+}
+
+.mensagemFinalizacao .id-pedido h3 {
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 6.8rem;
+  color: #502314;
+}
+
+
+.mensagemFinalizacao .id-pedido p {
+  font-size: 3.4rem;
+  font-weight: 400;
+  line-height: 4.6rem;
+  color: #f7f5f0;
+}
+
+.mensagemFinalizacao div + p {
+  color: #502314;
+  font-size: 3.4rem;
+  font-style: italic;
+  font-weight: 200;
+  line-height: 4.6rem;
+  text-align: center;
+  margin-top: 2.1rem;
+}
+
